@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AegisHealth ERP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<section id="login" class="login" hidden>
+  <form id="login-form" class="login-card">
+    <h1>AegisHealth</h1>
+    <p class="muted">Sign in to the hospital workspace.</p>
+    <label>Email <input name="email" type="email" value="admin@aegis.test" required></label>
+    <label>Password <input name="password" type="password" value="Aegis@123" required></label>
+    <p id="login-error" class="error"></p>
+    <button class="btn primary" type="submit">Sign in</button>
+    <p class="muted small">Demo accounts: admin, doctor, nurse, reception, pharmacy, billing @aegis.test</p>
+  </form>
+</section>
+
+<div id="shell" class="shell" hidden>
+  <aside class="sidebar">
+    <div class="brand">AegisHealth</div>
+    <nav id="nav"></nav>
+    <div class="me"><span id="me-name"></span><button id="logout" class="link">Sign out</button></div>
+  </aside>
+  <main id="view" class="view"></main>
+</div>
+<div id="toast" class="toast" role="status"></div>
+
+<script src="assets/js/api.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/dashboard.js"></script>
+<script src="assets/js/patients.js"></script>
+<script src="assets/js/appointments.js"></script>
+<script src="assets/js/ehr.js"></script>
+<script src="assets/js/billing.js"></script>
+<script src="assets/js/pharmacy.js"></script>
+<script src="assets/js/staff.js"></script>
+<script>Aegis.boot();</script>
+</body>
+</html>
